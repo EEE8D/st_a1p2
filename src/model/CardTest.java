@@ -1,18 +1,22 @@
 package model;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-//import org.junit.platform.commons.logging.Logger;
-//import org.junit.platform.commons.logging.LoggerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class CardTest {
 
-//    private static final Logger log = LoggerFactory.getLogger(CardTest.class);
-
     @Test
     void JunitPractice(){
         assertEquals(4, 2+2);
+    }
+
+    @Test
+    void newCard_TwoOfHearts_TestValue_ShouldReturnTrue(){
+        Card a_card = new Card(Card.Value.values()[1], Card.Colors.valus()[0]);
+        assertEquals(Card.Value.Two, a_card.m_color);
     }
 
 }
