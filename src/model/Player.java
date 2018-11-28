@@ -12,12 +12,12 @@ public class Player {
         m_hand = new LinkedList<Card>();
     }
 
-    protected void DealCard(Card a_addToHand) {
+    void DealCard(Card a_addToHand) {
         m_hand.add(a_addToHand);
 //        HandUpdateEvent();
     }
 
-    protected Iterable<Card> GetHand() {
+    Iterable<Card> GetHand() {
         return m_hand;
     }
 

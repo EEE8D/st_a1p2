@@ -19,14 +19,14 @@ public class Dealer extends Player{
     }
 
     boolean IsDealerWinner(Player a_player){
-        return true;
+        return false;
     }
 
     boolean IsGameOver(){
         return false;
     }
 
-    void dealNextCard(boolean isCardHidden, Player a_player){
+    void dealNextCard(boolean isCardNotHidden, Player a_player){
 
     }
 }
