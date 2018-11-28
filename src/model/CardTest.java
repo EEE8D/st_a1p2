@@ -14,14 +14,10 @@ class CardTest {
     }
 
     @Test
-    void newCard_TwoOfHearts_TestValue_ShouldReturnTrue(){
+    void newCard_TwoOfHearts_TestConstructor_ShouldReturnTrue(){
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
         assertEquals(Card.Value.Two, a_card.m_value);
-    }
-
-    @Test
-    void newCard_TwoOfHearts_TestColor_ShouldReturnTrue(){
-        Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
         assertEquals(Card.Color.Hearts, a_card.m_color);
     }
+
 }
