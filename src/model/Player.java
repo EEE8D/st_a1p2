@@ -26,4 +26,8 @@ public class Player {
         }
     }
 
+    int CalcScore(){
+        return 0;
+    }
+
 }

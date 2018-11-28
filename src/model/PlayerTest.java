@@ -52,4 +52,17 @@ class PlayerTest {
 
         assertEquals(Card.Color.Hearts, a_player.GetHand().iterator().next().GetColor());
     }
+
+    @Test
+    void CalcScore_2H_ShouldReturn2(){
+        Player a_player = new Player();
+
+        a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+
+        int expected = 2;
+        int actual = a_player.CalcScore();
+
+        assertEquals(expected, actual);
+
+    }
 }
