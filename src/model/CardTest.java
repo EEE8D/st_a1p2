@@ -1,7 +1,5 @@
 package model;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,21 +12,21 @@ class CardTest {
     }
 
     @Test
-    void newCard_TwoOfHearts_TestConstructor_ShouldReturnTrue(){
+    void NewCard_TwoOfHearts_TestConstructor_ShouldReturnTrue(){
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
-        assertEquals(Card.Value.Two, a_card.getValue());
-        assertEquals(Card.Color.Hearts, a_card.getColor());
+        assertEquals(Card.Value.Two, a_card.GetValue());
+        assertEquals(Card.Color.Hearts, a_card.GetColor());
     }
 
     @Test
-    void getValue_ShouldPass(){
+    void GetValue_ShouldPass(){
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
-        assertEquals(Card.Value.Two, a_card.getValue());
+        assertEquals(Card.Value.Two, a_card.GetValue());
     }
 
     @Test
-    void getColor_ShouldPass(){
+    void GetColor_ShouldPass(){
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
-        assertEquals(Card.Color.Hearts, a_card.getColor());
+        assertEquals(Card.Color.Hearts, a_card.GetColor());
     }
 }

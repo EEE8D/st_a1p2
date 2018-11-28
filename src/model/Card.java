@@ -37,11 +37,11 @@ public class Card {
         m_color = a_color;
     }
 
-    public Value getValue() {
+    public Value GetValue() {
         return m_value;
     }
 
-    public Color getColor() {
+    public Color GetColor() {
         return m_color;
     }
 }

@@ -16,9 +16,11 @@ class DeckTest {
     }
 
     @Test
-    void getCard(){
+    void GetCard(){
         Deck a_deck = new Deck();
-        assertEquals(new Card(Card.Value.Two, Card.Color.Hearts), a_deck.getCard());
+        Card a_card = a_deck.GetCard();
+        assertEquals(Card.Value.Two, a_card.GetValue());
+        assertEquals(Card.Color.Hearts, a_card.GetColor());
     }
 
 //    @Test
