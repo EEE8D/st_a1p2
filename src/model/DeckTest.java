@@ -33,5 +33,4 @@ class DeckTest {
 
         assertEquals(a_card, a_deck.GetCard());
     }
-
 }
