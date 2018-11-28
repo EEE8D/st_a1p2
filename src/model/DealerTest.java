@@ -1,6 +1,8 @@
 package model;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import static org.mockito.Mockito.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -82,7 +84,16 @@ class DealerTest {
     }
 
     @Test
-    void NewGame_WhenCall_ShouldPass(){
+    void NewGame_WhenCall_ShouldDealCardsInRightWay(){
+        Dealer a_dealer = mock(Dealer.class);
+//        Player a_player = new Player();
+        Player a_player = mock(Player.class);
+
+        when(a_dealer.NewGame(a_player)).thenReturn(true);
+        verify(a_dealer).dealNextCard(false, a_dealer);
+        verify(a_dealer).dealNextCard(true, a_dealer);
+        verify(a_dealer).dealNextCard(true, a_player);
+        verify(a_dealer).dealNextCard(true, a_player);
 
     }
 }

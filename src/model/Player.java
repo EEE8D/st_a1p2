@@ -27,6 +27,7 @@ public class Player {
         }
     }
 
+    //no test implement in this method, should be detected by code coverage
     void ClearHand() {
         m_hand.clear();
     }

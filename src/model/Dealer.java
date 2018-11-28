@@ -8,6 +8,14 @@ public class Dealer extends Player{
     }
 
     boolean NewGame(Player a_player){
+//        m_deck = new Deck();
+//        this.ClearHand();
+//        a_player.ClearHand();
+//
+//        dealNextCard(false, this);
+//        dealNextCard(true, this);
+//        dealNextCard(true, a_player);
+//        dealNextCard(true, a_player);
         return true;
     }
 
