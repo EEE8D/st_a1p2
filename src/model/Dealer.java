@@ -32,6 +32,9 @@ public class Dealer extends Player{
     }
 
     void dealNextCard(boolean isCardNotHidden, Player a_player){
-
+        Card c;
+        c = m_deck.GetCard();
+        c.Show(isCardNotHidden);
+        a_player.DealCard(c);
     }
 }
