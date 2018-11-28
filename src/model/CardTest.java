@@ -14,6 +14,7 @@ class CardTest {
     @Test
     void NewCard_TwoOfHearts_TestConstructor_ShouldReturnTrue(){
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
+        a_card.Show(true);
         assertEquals(Card.Value.Two, a_card.GetValue());
         assertEquals(Card.Color.Hearts, a_card.GetColor());
     }
@@ -21,12 +22,14 @@ class CardTest {
     @Test
     void GetValue_ShouldReturnTwo(){
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
+        a_card.Show(true);
         assertEquals(Card.Value.Two, a_card.GetValue());
     }
 
     @Test
     void GetColor_ShouldReturnHearts(){
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
+        a_card.Show(true);
         assertEquals(Card.Color.Hearts, a_card.GetColor());
     }
 
