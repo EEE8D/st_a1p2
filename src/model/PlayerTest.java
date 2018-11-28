@@ -64,6 +64,19 @@ class PlayerTest {
         int actual = a_player.CalcScore();
 
         assertEquals(expected, actual);
+    }
 
+    @Test
+    void CalcScore_2H_5H_ShouldReturn7(){
+        Player a_player = new Player();
+
+        a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+        a_player.DealCard(new Card(Card.Value.Five, Card.Color.Hearts));
+        a_player.ShowHand();
+
+        int expected = 7;
+        int actual = a_player.CalcScore();
+
+        assertEquals(expected, actual);
     }
 }
