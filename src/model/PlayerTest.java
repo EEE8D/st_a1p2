@@ -15,5 +15,11 @@ class PlayerTest {
         assertEquals(card, a_player.GetHand().iterator().next());
     }
 
+    @Test
+    void ShowHand_StubCard_Hidden_To_TwoOfHearts_ShouldPass(){
+        Player a_player = new Player();
+        Card card = new Card(Card.Value.Two, Card.Color.Hearts);
+
+    }
 
 }
