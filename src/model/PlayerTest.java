@@ -31,4 +31,25 @@ class PlayerTest {
         assertEquals(Card.Color.Hidden, a_player.GetHand().iterator().next().GetColor());
     }
 
+    @Test
+    void ShowHand_Value_ShouldReturnTwo(){
+        Player a_player = new Player();
+        Card card = new Card(Card.Value.Two, Card.Color.Hearts);
+        a_player.DealCard(card);
+
+        a_player.ShowHand();
+
+        assertEquals(Card.Value.Two, a_player.GetHand().iterator().next().GetValue());
+    }
+
+    @Test
+    void ShowHand_Color_ShouldReturnHearts(){
+        Player a_player = new Player();
+        Card card = new Card(Card.Value.Two, Card.Color.Hearts);
+        a_player.DealCard(card);
+
+        a_player.ShowHand();
+
+        assertEquals(Card.Color.Hearts, a_player.GetHand().iterator().next().GetColor());
+    }
 }
