@@ -16,10 +16,19 @@ class PlayerTest {
     }
 
     @Test
-    void ShowHand_StubCard_Hidden_To_TwoOfHearts_ShouldPass(){
+    void Without_ShowHand_Value_ShouldReturnHidden(){
         Player a_player = new Player();
         Card card = new Card(Card.Value.Two, Card.Color.Hearts);
+        a_player.DealCard(card);
+        assertEquals(Card.Value.Hidden, a_player.GetHand().iterator().next().GetValue());
+    }
 
+    @Test
+    void Without_ShowHand_Color_ShouldReturnHidden(){
+        Player a_player = new Player();
+        Card card = new Card(Card.Value.Two, Card.Color.Hearts);
+        a_player.DealCard(card);
+        assertEquals(Card.Color.Hidden, a_player.GetHand().iterator().next().GetColor());
     }
 
 }
