@@ -29,10 +29,10 @@ public class Card {
         Hidden
     }
 
-    public Color m_color;
-    public Value m_value;
+    private Color m_color;
+    private Value m_value;
 
-    public Card(Value a_value, Color a_color) {
+    Card(Value a_value, Color a_color) {
         m_value = a_value;
         m_color = a_color;
     }
