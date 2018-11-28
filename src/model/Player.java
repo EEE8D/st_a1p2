@@ -6,6 +6,7 @@ import java.util.List;
 public class Player {
 
     private List<Card> m_hand;
+    protected final int g_maxScore = 21;
 
     Player(){
         m_hand = new LinkedList<Card>();
@@ -36,6 +37,14 @@ public class Player {
         for (Card c : GetHand()) {
             if (c.GetValue() != Card.Value.Hidden) {
                 score += cardScores[c.GetValue().ordinal()];
+            }
+        }
+
+        if (score > g_maxScore) {
+            for (Card c : GetHand()) {
+                if (c.GetValue() == Card.Value.Ace && score > g_maxScore) {
+                    score -= 10;
+                }
             }
         }
 
