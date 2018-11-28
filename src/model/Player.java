@@ -28,7 +28,7 @@ public class Player {
     }
 
     void ClearHand() {
-//        m_hand.clear();
+        m_hand.clear();
     }
 
     int CalcScore(){

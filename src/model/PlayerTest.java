@@ -2,6 +2,9 @@ package model;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+
+import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -123,7 +126,7 @@ class PlayerTest {
     }
 
     @Test
-    void ClearHand_Deal_2H_HandShouldBeNull(){
+    void ClearHand_Deal_2H_HandShouldCatchNoSuchElementException(){
         Player a_player = new Player();
 
         a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
@@ -133,6 +136,12 @@ class PlayerTest {
 
         Iterable<Card> hand = a_player.GetHand();
 
-        assertNull(hand.iterator().next());
+//        assertNull(hand.iterator().next());
+
+        try{
+            hand.iterator().next();
+        }catch (Exception e){
+            assertEquals(NoSuchElementException.class, e.getClass());
+        }
     }
 }
