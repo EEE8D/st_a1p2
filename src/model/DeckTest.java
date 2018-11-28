@@ -23,10 +23,15 @@ class DeckTest {
         assertEquals(Card.Color.Hearts, a_card.GetColor());
     }
 
-//    @Test
-//    void GetCard2_clear_insert_HiddenOfHidden(){
-//        Deck a_deck = new Deck();
-//
-//    }
+    @Test
+    void GetCard2_clear_insert_HiddenOfHidden(){
+        Deck a_deck = new Deck();
+        a_deck.m_cards.clear();
+
+        Card a_card = new Card(Card.Value.Two, Card.Color.Hearts);
+        a_deck.m_cards.add(a_card);
+
+        assertEquals(a_card, a_deck.GetCard());
+    }
 
 }
