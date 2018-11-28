@@ -136,8 +136,6 @@ class PlayerTest {
 
         Iterable<Card> hand = a_player.GetHand();
 
-//        assertNull(hand.iterator().next());
-
         try{
             hand.iterator().next();
         }catch (Exception e){
