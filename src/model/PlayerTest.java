@@ -109,4 +109,16 @@ class PlayerTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void Without_ClearHand_Deal_2H_HandShouldNotBeNull(){
+        Player a_player = new Player();
+
+        a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+        a_player.ShowHand();
+
+        Iterable<Card> hand = a_player.GetHand();
+
+        assertNotNull(hand.iterator().next());
+    }
 }
