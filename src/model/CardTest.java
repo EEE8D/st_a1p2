@@ -15,8 +15,8 @@ class CardTest {
 
     @Test
     void newCard_TwoOfHearts_TestValue_ShouldReturnTrue(){
-        Card a_card = new Card(Card.Value.values()[1], Card.Colors.valus()[0]);
-        assertEquals(Card.Value.Two, a_card.m_color);
+        Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
+        assertEquals(Card.Value.Two, a_card.m_value);
     }
 
 }
