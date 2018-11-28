@@ -20,4 +20,10 @@ public class Player {
         return m_hand;
     }
 
+    void ShowHand() {
+        for (Card c : GetHand()) {
+            c.Show(true);
+        }
+    }
+
 }
