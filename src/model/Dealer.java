@@ -2,7 +2,7 @@ package model;
 
 public class Dealer extends Player{
 
-    private Deck m_deck;
+    Deck m_deck;
 
     Dealer(){};
 
@@ -19,6 +19,11 @@ public class Dealer extends Player{
     }
 
     boolean IsDealerWinner(Player a_player){
+        if (a_player.CalcScore() > g_maxScore) {
+            return true;
+        } else if (CalcScore() > g_maxScore) {
+            return false;
+        }
         return this.CalcScore() >= a_player.CalcScore();
     }
 

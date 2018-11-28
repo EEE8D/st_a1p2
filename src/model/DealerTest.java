@@ -68,4 +68,15 @@ class DealerTest {
 
         assertTrue(a_dealer.IsDealerWinner(a_player));
     }
+
+    @Test
+    void DealNextCard_ShouldPass(){
+        Dealer a_dealer = new Dealer();
+
+        Card firstCard = a_dealer.m_deck.m_cards.getFirst();
+
+        a_dealer.dealNextCard(true, a_dealer);
+
+        assertEquals(firstCard, a_dealer.GetHand().iterator().next());
+    }
 }
