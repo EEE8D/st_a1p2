@@ -37,4 +37,7 @@ public class Card {
         m_color = a_color;
     }
 
+    public Value getValue() {
+        return m_value;
+    }
 }
