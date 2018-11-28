@@ -16,7 +16,7 @@ class DeckTest {
     }
 
     @Test
-    void GetCard(){
+    void GetCard_getFirst_ShouldBeTwoOfHearts(){
         Deck a_deck = new Deck();
         Card a_card = a_deck.GetCard();
         assertEquals(Card.Value.Two, a_card.GetValue());
@@ -24,8 +24,9 @@ class DeckTest {
     }
 
 //    @Test
-//    void newDeck_ShouldHas52Cards(){
+//    void GetCard2_clear_insert_HiddenOfHidden(){
 //        Deck a_deck = new Deck();
-//        assertTrue(a_deck.m_cards.contains());
+//
 //    }
+
 }
