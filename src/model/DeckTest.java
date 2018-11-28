@@ -9,9 +9,9 @@ import static org.mockito.Mockito.*;
 class DeckTest {
 
     @Test
-    void ShuffledDeck_constructor_ShouldPass(){
+    void ShuffledDeck_ShouldPass(){
         Deck mocked_deck = mock(Deck.class);
-//        when(mocked_deck.)
-        verify(mocked_deck).shuffle();
+        mocked_deck.Shuffle();
+        verify(mocked_deck).Shuffle();
     }
 }
