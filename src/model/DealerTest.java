@@ -72,11 +72,17 @@ class DealerTest {
     @Test
     void DealNextCard_ShouldPass(){
         Dealer a_dealer = new Dealer();
+        a_dealer.m_deck = new Deck();
 
         Card firstCard = a_dealer.m_deck.m_cards.get(0);
 
         a_dealer.dealNextCard(true, a_dealer);
 
         assertEquals(firstCard, a_dealer.GetHand().iterator().next());
+    }
+
+    @Test
+    void NewGame_WhenCall_ShouldPass(){
+
     }
 }

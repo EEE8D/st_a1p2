@@ -5,8 +5,7 @@ public class Dealer extends Player{
     Deck m_deck;
 
     Dealer(){
-        m_deck = new Deck();
-    };
+    }
 
     boolean NewGame(Player a_player){
         return true;
