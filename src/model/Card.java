@@ -40,4 +40,8 @@ public class Card {
     public Value getValue() {
         return m_value;
     }
+
+    public Color getColor() {
+        return m_color;
+    }
 }
