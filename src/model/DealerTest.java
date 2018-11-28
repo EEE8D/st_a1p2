@@ -13,8 +13,10 @@ class DealerTest {
 
         a_dealer.DealCard(new Card(Card.Value.Ace, Card.Color.Hearts));
         a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
+        a_dealer.ShowHand();
         a_player.DealCard(new Card(Card.Value.Ace, Card.Color.Spades));
         a_player.DealCard(new Card(Card.Value.Nine, Card.Color.Hearts));
+        a_dealer.ShowHand();
 
         assertTrue(a_dealer.IsDealerWinner(a_player));
     }
