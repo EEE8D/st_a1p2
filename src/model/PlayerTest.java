@@ -7,15 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PlayerTest {
 
-    Player a_player;
-
-    @BeforeAll
-    void setup(){
-        Player a_player = new Player();
-    }
-
     @Test
     void DealCard_ReceiveCard_TwoOfHearts_ShouldPass(){
+        Player a_player = new Player();
         Card card = new Card(Card.Value.Two, Card.Color.Hearts);
         a_player.DealCard(card);
         assertEquals(card, a_player.m_hand.get(0));
