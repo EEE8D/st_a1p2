@@ -58,6 +58,7 @@ class PlayerTest {
         Player a_player = new Player();
 
         a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+        a_player.ShowHand();
 
         int expected = 2;
         int actual = a_player.CalcScore();
