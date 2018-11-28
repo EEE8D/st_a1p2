@@ -25,4 +25,10 @@ class CardTest {
         Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
         assertEquals(Card.Value.Two, a_card.getValue());
     }
+
+    @Test
+    void getColor_ShouldPass(){
+        Card a_card = new Card(Card.Value.values()[0], Card.Color.values()[0]);
+        assertEquals(Card.Color.Hearts, a_card.getColor());
+    }
 }
