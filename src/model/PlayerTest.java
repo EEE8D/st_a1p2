@@ -20,6 +20,8 @@ class PlayerTest {
         Player a_player = new Player();
         Card card = new Card(Card.Value.Two, Card.Color.Hearts);
         a_player.DealCard(card);
-        assertEquals(card, a_player.GetHand().get(0));
+        assertEquals(card, a_player.GetHand().iterator().next());
     }
+
+
 }
