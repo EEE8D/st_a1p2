@@ -121,4 +121,18 @@ class PlayerTest {
 
         assertNotNull(hand.iterator().next());
     }
+
+    @Test
+    void ClearHand_Deal_2H_HandShouldBeNull(){
+        Player a_player = new Player();
+
+        a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+        a_player.ShowHand();
+
+        a_player.ClearHand();
+
+        Iterable<Card> hand = a_player.GetHand();
+
+        assertNull(hand.iterator().next());
+    }
 }
