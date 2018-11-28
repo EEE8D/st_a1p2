@@ -94,4 +94,20 @@ class PlayerTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    void CalcScore_2H_5H_AceH_10H_ShouldReturn18(){
+        Player a_player = new Player();
+
+        a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+        a_player.DealCard(new Card(Card.Value.Five, Card.Color.Hearts));
+        a_player.DealCard(new Card(Card.Value.Ace, Card.Color.Hearts));
+        a_player.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
+        a_player.ShowHand();
+
+        int expected = 18;
+        int actual = a_player.CalcScore();
+
+        assertEquals(expected, actual);
+    }
 }
