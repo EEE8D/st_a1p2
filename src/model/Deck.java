@@ -6,7 +6,7 @@ public class Deck {
 
     LinkedList<Card> m_cards;
 
-    public Deck() {
+    Deck() {
         m_cards = new LinkedList<Card>();
 
         for (int cIx = 0; cIx < Card.Color.Count.ordinal(); cIx++) {
@@ -17,7 +17,7 @@ public class Deck {
         }
     }
 
-    public Card GetCard() {
+    Card GetCard() {
         Card c = m_cards.get(0);
         m_cards.remove(0);
         return c;

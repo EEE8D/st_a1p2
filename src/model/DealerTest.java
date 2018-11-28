@@ -73,7 +73,7 @@ class DealerTest {
     void DealNextCard_ShouldPass(){
         Dealer a_dealer = new Dealer();
 
-        Card firstCard = a_dealer.m_deck.m_cards.getFirst();
+        Card firstCard = a_dealer.m_deck.m_cards.get(0);
 
         a_dealer.dealNextCard(true, a_dealer);
 
