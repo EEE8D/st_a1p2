@@ -19,7 +19,12 @@ public class Dealer extends Player{
     }
 
     boolean IsDealerWinner(Player a_player){
-        return false;
+//        if (a_player.CalcScore() > g_maxScore) {
+//            return true;
+//        } else if (this.CalcScore() > g_maxScore) {
+//            return false;
+//        }
+        return this.CalcScore() >= a_player.CalcScore();
     }
 
     boolean IsGameOver(){
