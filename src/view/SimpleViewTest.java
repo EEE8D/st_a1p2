@@ -11,15 +11,17 @@ class SimpleViewTest {
     @Test //mock System.in
     void CollectEvent_p_ShouldReturnChar(){
         SimpleView a_view = mock(SimpleView.class);
+
         when(a_view.GetInputChar()).thenReturn((int)'p');
 
-        int actual = a_view.GetInputChar();
+//        a_view.collectEvents();
+        a_view.m_input = a_view.GetInputChar();
+
+        int actual = a_view.m_input;
         int expect = 'p';
 
         assertEquals(expect, actual);
     }
-
-
 
 
 
