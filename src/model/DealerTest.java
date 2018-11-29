@@ -3,9 +3,6 @@ package model;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 class DealerTest {
 
@@ -127,7 +124,7 @@ class DealerTest {
 //    }
 
     @Test
-    void isGameOver_d_Score_16_ShouldBeFalse(){
+    void isGameOver_d_Score_16_ShouldBeFalse() {
         Deck a_deck = new Deck();
         Dealer a_dealer = new Dealer(a_deck);
 
@@ -139,7 +136,7 @@ class DealerTest {
     }
 
     @Test
-    void isGameOver_d_Score_17_ShouldBeTrue(){
+    void isGameOver_d_Score_17_ShouldBeTrue() {
         Deck a_deck = new Deck();
         Dealer a_dealer = new Dealer(a_deck);
 
@@ -151,7 +148,7 @@ class DealerTest {
     }
 
     @Test
-    void Hit_Player_2_ReturnTrue(){
+    void Hit_Player_2_ReturnTrue() {
         Deck a_deck = new Deck();
         Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
@@ -163,7 +160,7 @@ class DealerTest {
     }
 
     @Test
-    void Hit_Player_22_ReturnFalse(){
+    void Hit_Player_22_ReturnFalse() {
         Deck a_deck = new Deck();
         Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
@@ -177,7 +174,7 @@ class DealerTest {
     }
 
     @Test
-    void Stand_Dealer_16_ShouldReturnTrue(){
+    void Stand_Dealer_16_ShouldReturnTrue() {
         Deck a_deck = new Deck();
         Dealer a_dealer = new Dealer(a_deck);
 
@@ -189,15 +186,34 @@ class DealerTest {
     }
 
     @Test
-    void Stand_Dealer_22_ShouldReturnTrue(){
+    void Stand_Dealer_20_ShouldReturnTrue() {
         Deck a_deck = new Deck();
         Dealer a_dealer = new Dealer(a_deck);
 
         a_dealer.DealCard(new Card(Card.Value.Six, Card.Color.Hearts));
         a_dealer.ShowHand();
         a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
-        a_dealer.DealCard(new Card(Card.Value.Six, Card.Color.Spades));
+        a_dealer.DealCard(new Card(Card.Value.Four, Card.Color.Spades));
 
         assertTrue(a_dealer.Stand());
+    }
+
+    @Test
+    void NewGame_Dealer_Should_Receive_2_Cards() {
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
+        Player a_player = new Player();
+
+        a_dealer.NewGame(a_player);
+
+        int count_d_hand = 0;
+        Iterable<Card> d_hand = a_dealer.GetHand();
+        for (Card c : d_hand) {
+            count_d_hand++;
+        }
+
+        int expect = 2;
+
+        assertEquals(2, count_d_hand);
     }
 }

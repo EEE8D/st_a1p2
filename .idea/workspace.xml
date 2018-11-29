@@ -29,12 +29,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4781" />
+          <entry key="java" value="4951" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4781" />
+          <entry key="JAVA" value="4951" />
         </counts>
       </usages-collector>
     </session>
@@ -44,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Dealer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state relative-caret-position="210">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="e#87#88#0" expanded="true" />
                 <element signature="e#121#122#0" expanded="true" />
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/DealerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="200" column="20" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
+            <state relative-caret-position="410">
+              <caret line="216" column="8" lean-forward="true" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/model/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/model/Deck.java" />
         <option value="$PROJECT_DIR$/src/model/Player.java" />
-        <option value="$PROJECT_DIR$/src/model/DealerTest.java" />
         <option value="$PROJECT_DIR$/src/model/Dealer.java" />
+        <option value="$PROJECT_DIR$/src/model/DealerTest.java" />
       </list>
     </option>
   </component>
@@ -230,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DealerTest">
+  <component name="RunManager" selected="JUnit.DealerTest.NewGame_ShouldPass">
     <configuration name="DealerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="st_a1p2" />
       <option name="PACKAGE_NAME" value="model" />
@@ -269,11 +269,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DealerTest.IsDealerWinner_Dealer_AH_9H_Player_AS_10H_ShouldReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DealerTest.NewGame_ShouldPass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="st_a1p2" />
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.DealerTest" />
-      <option name="METHOD_NAME" value="IsDealerWinner_Dealer_AH_9H_Player_AS_10H_ShouldReturnFalse" />
+      <option name="METHOD_NAME" value="NewGame_ShouldPass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -281,18 +281,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.DealerTest" />
-      <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_Player_AS_10H_ShouldReturnFalse" />
       <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_2H_Player_AS_10H_ShouldReturnFalse" />
       <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_10S_Player_AS_10H_ShouldReturnFalse" />
       <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_10H_Player_AS_9H_ShouldReturnTrue" />
+      <item itemvalue="JUnit.DealerTest.NewGame_ShouldPass" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DealerTest.NewGame_ShouldPass" />
         <item itemvalue="JUnit.DealerTest" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_10H_Player_AS_9H_ShouldReturnTrue" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_10S_Player_AS_10H_ShouldReturnFalse" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_2H_Player_AS_10H_ShouldReturnFalse" />
-        <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_Player_AS_10H_ShouldReturnFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -303,20 +303,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543398124570</updated>
-      <workItem from="1543398126014" duration="23896000" />
+      <workItem from="1543398126014" duration="24396000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DealerTest - 2018.11.29 at 21h 51m 13s.xml">
-      <configuration name="DealerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DealerTest - 2018.11.29 at 21h 56m 31s.xml">
-      <configuration name="DealerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DealerTest - 2018.11.29 at 21h 57m 25s.xml">
-      <configuration name="DealerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DealerTest - 2018.11.29 at 21h 57m 49s.xml">
       <configuration name="DealerTest" configurationId="JUnit" />
     </history-entry>
@@ -338,9 +329,18 @@
     <history-entry file="DealerTest - 2018.11.29 at 22h 16m 12s.xml">
       <configuration name="DealerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DealerTest - 2018.11.29 at 22h 17m 02s.xml">
+      <configuration name="DealerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest - 2018.11.29 at 22h 17m 07s.xml">
+      <configuration name="DealerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DealerTest - 2018.11.29 at 22h 17m 58s.xml">
+      <configuration name="DealerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23896000" />
+    <option name="totallyTimeSpent" value="24396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="399" y="23" width="1280" height="1009" extended-state="0" />
@@ -348,7 +348,7 @@
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" sideWeight="0.500813" side_tool="true" weight="0.24959612" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.499187" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.499187" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
@@ -358,7 +358,7 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50080776" side_tool="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -472,25 +472,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DealerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="200" column="20" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Dealer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="e#87#88#0" expanded="true" />
             <element signature="e#121#122#0" expanded="true" />
             <element signature="e#1065#1066#0" expanded="true" />
             <element signature="e#1110#1111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/DealerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="216" column="8" lean-forward="true" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
