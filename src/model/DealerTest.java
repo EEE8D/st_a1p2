@@ -132,4 +132,14 @@ class DealerTest {
         assertFalse(a_dealer.IsGameOver());
     }
 
+    @Test
+    void isGameOver_d_Score_17_ShouldBeTrue(){
+        Dealer a_dealer = new Dealer();
+
+        a_dealer.DealCard(new Card(Card.Value.Seven, Card.Color.Hearts));
+        a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
+        a_dealer.ShowHand();
+
+        assertTrue(a_dealer.IsGameOver());
+    }
 }
