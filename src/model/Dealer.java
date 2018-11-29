@@ -7,7 +7,8 @@ class Dealer extends Player{
 
     Deck m_deck;
 
-    Dealer(){
+    Dealer(Deck deck){
+        this.m_deck = deck;
     }
 
     boolean NewGame(Player a_player){
@@ -25,7 +26,7 @@ class Dealer extends Player{
 
     boolean Hit(Player a_player){
         if (a_player.CalcScore() < 21){
-            
+            dealNextCard(true, a_player);
             return true;
         }
         return false;

@@ -156,7 +156,8 @@ class DealerTest {
 
     @Test
     void Hit_Player_22_ReturnFalse(){
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
 
         a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));

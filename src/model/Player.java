@@ -8,13 +8,12 @@ public class Player {
     private List<Card> m_hand;
     protected final int g_maxScore = 21;
 
-    Player(){
+    Player() {
         m_hand = new LinkedList<Card>();
     }
 
     void DealCard(Card a_addToHand) {
         m_hand.add(a_addToHand);
-//        HandUpdateEvent();
     }
 
     Iterable<Card> GetHand() {
@@ -32,7 +31,7 @@ public class Player {
         m_hand.clear();
     }
 
-    int CalcScore(){
+    int CalcScore() {
         int cardScores[] = {
                 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11
         };
