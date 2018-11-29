@@ -33,6 +33,13 @@ class Dealer extends Player{
     }
 
     boolean Stand(){
+        if (!IsGameOver()){
+            ShowHand();
+            while (this.CalcScore() < 17){
+                dealNextCard(true, this);
+            }
+            return true;
+        }
         return false;
     }
 
