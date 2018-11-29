@@ -11,7 +11,8 @@ class DealerTest {
 
     @Test
     void IsDealerWinner_Dealer_AH_10H_Player_AS_9H_ShouldReturnTrue() {
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
 
         a_dealer.DealCard(new Card(Card.Value.Ace, Card.Color.Hearts));
@@ -26,7 +27,8 @@ class DealerTest {
 
     @Test
     void IsDealerWinner_Dealer_AH_9H_Player_AS_10H_ShouldReturnFalse() {
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
 
         a_dealer.DealCard(new Card(Card.Value.Ace, Card.Color.Hearts));
@@ -41,7 +43,8 @@ class DealerTest {
 
     @Test
     void IsDealerWinner_Dealer_AH_9H_10S_Player_AS_10H_ShouldReturnFalse() {
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
 
         a_dealer.DealCard(new Card(Card.Value.Ace, Card.Color.Hearts));
@@ -57,7 +60,8 @@ class DealerTest {
 
     @Test
     void IsDealerWinner_Dealer_AH_9H_Player_AS_10H_10S_2H_ShouldReturnTrue() {
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
 
         a_dealer.DealCard(new Card(Card.Value.Ace, Card.Color.Hearts));
@@ -76,7 +80,8 @@ class DealerTest {
     void DealNextCard_ShouldPass() {
 //        Dealer a_dealer = mock(Dealer.class);
 //        when(a_dealer.dealNextCard())
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
         a_dealer.m_deck = new Deck();
 
 
@@ -123,7 +128,8 @@ class DealerTest {
 
     @Test
     void isGameOver_d_Score_16_ShouldBeFalse(){
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
 
         a_dealer.DealCard(new Card(Card.Value.Six, Card.Color.Hearts));
         a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
@@ -134,7 +140,8 @@ class DealerTest {
 
     @Test
     void isGameOver_d_Score_17_ShouldBeTrue(){
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
 
         a_dealer.DealCard(new Card(Card.Value.Seven, Card.Color.Hearts));
         a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
@@ -145,7 +152,8 @@ class DealerTest {
 
     @Test
     void Hit_Player_2_ReturnTrue(){
-        Dealer a_dealer = new Dealer();
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
 
         a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
