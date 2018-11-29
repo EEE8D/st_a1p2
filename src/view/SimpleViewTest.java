@@ -19,16 +19,7 @@ class SimpleViewTest {
         assertEquals(expect, actual);
     }
 
-    @Test
-    void CollectEvent_h_ShouldReturnChar(){
-        SimpleView a_view = mock(SimpleView.class);
-        when(a_view.GetInputChar()).thenReturn((int)'h');
 
-        int actual = a_view.GetInputChar();
-        int expect = 'h';
-
-        assertEquals(expect, actual);
-    }
 
 
 
