@@ -187,4 +187,17 @@ class DealerTest {
 
         assertTrue(a_dealer.Stand());
     }
+
+    @Test
+    void Stand_Dealer_22_ShouldReturnTrue(){
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
+
+        a_dealer.DealCard(new Card(Card.Value.Six, Card.Color.Hearts));
+        a_dealer.ShowHand();
+        a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
+        a_dealer.DealCard(new Card(Card.Value.Six, Card.Color.Spades));
+
+        assertTrue(a_dealer.Stand());
+    }
 }

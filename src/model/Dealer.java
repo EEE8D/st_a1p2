@@ -1,17 +1,14 @@
 package model;
 
-import java.util.LinkedList;
-import java.util.List;
-
-class Dealer extends Player{
+class Dealer extends Player {
 
     Deck m_deck;
 
-    Dealer(Deck deck){
+    Dealer(Deck deck) {
         this.m_deck = deck;
     }
 
-    boolean NewGame(Player a_player){
+    boolean NewGame(Player a_player) {
         m_deck = new Deck();
 
         this.ClearHand();
@@ -24,26 +21,23 @@ class Dealer extends Player{
         return true;
     }
 
-    boolean Hit(Player a_player){
-        if (a_player.CalcScore() < 21){
+    boolean Hit(Player a_player) {
+        if (a_player.CalcScore() < 21) {
             dealNextCard(true, a_player);
             return true;
         }
         return false;
     }
 
-    boolean Stand(){
-        if (!IsGameOver()){
-            ShowHand();
-            while (this.CalcScore() < 17){
-                dealNextCard(true, this);
-            }
-            return true;
+    boolean Stand() {
+        ShowHand();
+        while (this.CalcScore() < 17) {
+            dealNextCard(true, this);
         }
-        return false;
+        return true;
     }
 
-    boolean IsDealerWinner(Player a_player){
+    boolean IsDealerWinner(Player a_player) {
         if (a_player.CalcScore() > g_maxScore) {
             return true;
         } else if (CalcScore() > g_maxScore) {
@@ -52,11 +46,11 @@ class Dealer extends Player{
         return this.CalcScore() >= a_player.CalcScore();
     }
 
-    boolean IsGameOver(){
+    boolean IsGameOver() {
         return this.CalcScore() >= 17;
     }
 
-    void dealNextCard(boolean isCardNotHidden, Player a_player){
+    void dealNextCard(boolean isCardNotHidden, Player a_player) {
         Card c;
         c = m_deck.GetCard();
         c.Show(isCardNotHidden);
