@@ -41,14 +41,14 @@ class SimpleViewTest {
     void wantsToHit_receive_p_then_return_false(){
         SimpleView a_view = new SimpleView();
         a_view.m_input = (int) 'p';
-        assertFalse(a_view.wantsToStartNewGame());
+        assertFalse(a_view.wantsToHit());
     }
 
     @Test
     void wantsToHit_receive_h_then_return_true(){
         SimpleView a_view = new SimpleView();
         a_view.m_input = (int) 'h';
-        assertTrue(a_view.wantsToStartNewGame());
+        assertTrue(a_view.wantsToHit());
     }
 
 

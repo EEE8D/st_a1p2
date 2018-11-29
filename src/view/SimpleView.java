@@ -24,14 +24,11 @@ public class SimpleView {
     }
 
     public boolean wantsToStartNewGame() {
-//        return false;
         return m_input == 'p';
     }
 
     public boolean wantsToHit() {
-        return false;
-
-//        return m_input == 'h';
+        return m_input == 'h';
     }
 
     public boolean wantsToStand() {
