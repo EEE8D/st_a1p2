@@ -40,7 +40,7 @@ public class Dealer extends Player{
     }
 
     boolean IsGameOver(){
-        return false;
+        return this.CalcScore() >= 17;
     }
 
     void dealNextCard(boolean isCardNotHidden, Player a_player){
