@@ -24,8 +24,8 @@ public class SimpleView {
     }
 
     public boolean wantsToStartNewGame() {
-        return false;
-//        return m_input == 'p';
+//        return false;
+        return m_input == 'p';
     }
 
     public boolean wantsToHit() {
