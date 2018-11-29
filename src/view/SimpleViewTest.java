@@ -30,6 +30,13 @@ class SimpleViewTest {
         assertTrue(a_view.wantsToStartNewGame());
     }
 
+    @Test
+    void wantsToStartNewGame_receive_h_then_return_true(){
+        SimpleView a_view = new SimpleView();
+        a_view.m_input = (int) 'h';
+        assertFalse(a_view.wantsToStartNewGame());
+    }
+
 //    @Test
 //    void CollectEvent_a_letter_
 
