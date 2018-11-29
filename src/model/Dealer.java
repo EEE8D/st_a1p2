@@ -3,7 +3,7 @@ package model;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Dealer extends Player{
+class Dealer extends Player{
 
     Deck m_deck;
 
@@ -12,6 +12,7 @@ public class Dealer extends Player{
 
     boolean NewGame(Player a_player){
         m_deck = new Deck();
+
         this.ClearHand();
         a_player.ClearHand();
 

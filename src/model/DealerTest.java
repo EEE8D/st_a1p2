@@ -19,7 +19,7 @@ class DealerTest {
         a_dealer.ShowHand();
         a_player.DealCard(new Card(Card.Value.Ace, Card.Color.Spades));
         a_player.DealCard(new Card(Card.Value.Nine, Card.Color.Hearts));
-        a_dealer.ShowHand();
+        a_player.ShowHand();
 
         assertTrue(a_dealer.IsDealerWinner(a_player));
     }
@@ -141,5 +141,16 @@ class DealerTest {
         a_dealer.ShowHand();
 
         assertTrue(a_dealer.IsGameOver());
+    }
+
+    @Test
+    void Hit_Player_2_ReturnTrue(){
+        Dealer a_dealer = new Dealer();
+        Player a_player = new Player();
+
+        a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+        a_player.ShowHand();
+
+        assertTrue(a_dealer.Hit(a_player));
     }
 }
