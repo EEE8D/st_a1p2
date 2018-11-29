@@ -153,4 +153,17 @@ class DealerTest {
 
         assertTrue(a_dealer.Hit(a_player));
     }
+
+    @Test
+    void Hit_Player_22_ReturnFalse(){
+        Dealer a_dealer = new Dealer();
+        Player a_player = new Player();
+
+        a_player.DealCard(new Card(Card.Value.Two, Card.Color.Hearts));
+        a_player.DealCard(new Card(Card.Value.King, Card.Color.Hearts));
+        a_player.DealCard(new Card(Card.Value.Knight, Card.Color.Hearts));
+        a_player.ShowHand();
+
+        assertFalse(a_dealer.Hit(a_player));
+    }
 }

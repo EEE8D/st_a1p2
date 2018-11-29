@@ -24,7 +24,11 @@ class Dealer extends Player{
     }
 
     boolean Hit(Player a_player){
-        return true;
+        if (a_player.CalcScore() < 21){
+            
+            return true;
+        }
+        return false;
     }
 
     boolean Stand(Player a_player){
