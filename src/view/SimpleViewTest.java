@@ -23,7 +23,12 @@ class SimpleViewTest {
         assertEquals(expect, actual);
     }
 
-
+    @Test
+    void wantsToStartNewGame_receive_p_then_return_true(){
+        SimpleView a_view = new SimpleView();
+        a_view.m_input = (int) 'p';
+        assertTrue(a_view.wantsToStartNewGame());
+    }
 
 //    @Test
 //    void CollectEvent_a_letter_
