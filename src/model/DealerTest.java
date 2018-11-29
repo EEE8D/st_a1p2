@@ -215,5 +215,6 @@ class DealerTest {
         int expect = 2;
 
         assertEquals(2, count_d_hand);
+        assertTrue(a_dealer.NewGame(a_player));
     }
 }
