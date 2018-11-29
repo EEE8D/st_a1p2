@@ -186,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DealerTest.NewGame_Dealer_Should_Receive_2_Cards">
+  <component name="RunManager" selected="JUnit.SimpleViewTest">
     <configuration name="DealerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="st_a1p2" />
       <option name="PACKAGE_NAME" value="model" />
@@ -200,16 +200,6 @@
       <option name="PACKAGE_NAME" value="model" />
       <option name="MAIN_CLASS_NAME" value="model.DealerTest" />
       <option name="METHOD_NAME" value="IsDealerWinner_Dealer_AH_10H_Player_AS_9H_ShouldReturnTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DealerTest.IsDealerWinner_Dealer_AH_9H_10S_Player_AS_10H_ShouldReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="st_a1p2" />
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.DealerTest" />
-      <option name="METHOD_NAME" value="IsDealerWinner_Dealer_AH_9H_10S_Player_AS_10H_ShouldReturnFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -235,20 +225,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleViewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="st_a1p2" />
+      <option name="PACKAGE_NAME" value="view" />
+      <option name="MAIN_CLASS_NAME" value="view.SimpleViewTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.DealerTest" />
-      <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_10S_Player_AS_10H_ShouldReturnFalse" />
       <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_10H_Player_AS_9H_ShouldReturnTrue" />
       <item itemvalue="JUnit.DealerTest.NewGame_ShouldPass" />
       <item itemvalue="JUnit.DealerTest.NewGame_Dealer_Should_Receive_2_Cards" />
+      <item itemvalue="JUnit.SimpleViewTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SimpleViewTest" />
         <item itemvalue="JUnit.DealerTest.NewGame_Dealer_Should_Receive_2_Cards" />
         <item itemvalue="JUnit.DealerTest.NewGame_ShouldPass" />
         <item itemvalue="JUnit.DealerTest" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_10H_Player_AS_9H_ShouldReturnTrue" />
-        <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_AH_9H_10S_Player_AS_10H_ShouldReturnFalse" />
       </list>
     </recent_temporary>
   </component>
