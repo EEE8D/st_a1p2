@@ -32,8 +32,8 @@ class Dealer extends Player{
         return false;
     }
 
-    boolean Stand(Player a_player){
-        return true;
+    boolean Stand(){
+        return false;
     }
 
     boolean IsDealerWinner(Player a_player){
