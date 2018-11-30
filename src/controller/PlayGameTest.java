@@ -29,4 +29,14 @@ class PlayGameTest {
         verify(a_view).DisplayWelcomeMessage();
     }
 
+    @Test
+    void Play_Should_Print_Table_after_print_message(){
+        PlayGame projectManager = new PlayGame();
+        projectManager.Play(a_view, a_game);
+        verify(a_view).DisplayWelcomeMessage();
+//        verify(a_view).DisplayDealerHand(a_game.G);
+//        verify(a_view).DisplayPlayerHand();
+
+    }
+
 }
