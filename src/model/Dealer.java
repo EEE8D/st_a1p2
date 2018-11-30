@@ -1,6 +1,6 @@
 package model;
 
-class Dealer extends Player {
+public class Dealer extends Player {
 
     Deck m_deck;
 
