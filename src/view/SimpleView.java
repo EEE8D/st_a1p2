@@ -49,7 +49,7 @@ public class SimpleView {
     }
 
     private void DisplayCard(model.Card a_card) {
-        System.out.println("" + a_card.GetValue() + " of " + a_card.GetColor());
+        System.out.println("\t" + a_card.GetValue() + " of " + a_card.GetColor());
     }
 
     public void DisplayDealerHand(Iterable<model.Card> a_hand, int a_score) {

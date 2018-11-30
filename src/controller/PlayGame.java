@@ -7,7 +7,7 @@ import javax.swing.text.View;
 
 public class PlayGame {
 
-    boolean Play(SimpleView a_view, Game a_game){
+    public boolean Play(SimpleView a_view, Game a_game){
         a_view.DisplayWelcomeMessage();
 
         a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
