@@ -10,10 +10,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/assignment1part2$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1543581872770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/assignment1part2$DeckTest.ic" NAME="DeckTest Coverage Results" MODIFIED="1543582626217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>model.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/assignment1part2$DeckTest.ic" NAME="DeckTest Coverage Results" MODIFIED="1543582626217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/assignment1part2$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1543582654613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>model.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/assignment1part2$DealerTest.ic" NAME="DealerTest Coverage Results" MODIFIED="1543582153501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -304,21 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeckTest">
-    <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="st_a1p2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model" />
-      <option name="MAIN_CLASS_NAME" value="model.CardTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PlayerTest">
     <configuration name="DealerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="st_a1p2" />
       <extension name="coverage">
@@ -379,20 +365,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="st_a1p2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model" />
+      <option name="MAIN_CLASS_NAME" value="model.PlayerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.CardTest" />
       <item itemvalue="JUnit.DealerTest" />
       <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_10S_2H_ShouldReturnFalse" />
       <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_ShouldReturnFalse" />
       <item itemvalue="JUnit.DeckTest" />
+      <item itemvalue="JUnit.PlayerTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.DeckTest" />
         <item itemvalue="JUnit.DealerTest" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_ShouldReturnFalse" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_10S_2H_ShouldReturnFalse" />
-        <item itemvalue="JUnit.CardTest" />
       </list>
     </recent_temporary>
   </component>
