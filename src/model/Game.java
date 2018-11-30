@@ -38,5 +38,11 @@ public class Game {
         return m_dealer.IsDealerWinner(m_player);
     }
 
+    public int GetDealerScore() {
+        return 0;
+    }
 
+    public int GetPlayerScore() {
+        return 0;
+    }
 }

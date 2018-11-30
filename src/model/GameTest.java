@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 class GameTest {
 
@@ -37,7 +38,7 @@ class GameTest {
     }
 
     @Test
-    void NewGame_WillCall_Dealer_Hit(){
+    void Hit_WillCall_Dealer_Hit(){
         Game a_game = new Game();
         assertTrue(a_game.GameInit(m_dealer, m_player));
 
@@ -46,7 +47,7 @@ class GameTest {
     }
 
     @Test
-    void NewGame_WillCall_Dealer_Stand(){
+    void Stand_WillCall_Dealer_Stand(){
         Game a_game = new Game();
         assertTrue(a_game.GameInit(m_dealer, m_player));
 
@@ -55,7 +56,7 @@ class GameTest {
     }
 
     @Test
-    void NewGame_WillCall_Dealer_IsGameOver(){
+    void IsGameOver_WillCall_Dealer_IsGameOver(){
         Game a_game = new Game();
         assertTrue(a_game.GameInit(m_dealer, m_player));
 
@@ -64,11 +65,21 @@ class GameTest {
     }
 
     @Test
-    void NewGame_WillCall_Dealer_IsDealerWinner(){
+    void IsDealerWinner_WillCall_Dealer_IsDealerWinner(){
         Game a_game = new Game();
         assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.IsDealerWinner();
         verify(m_dealer).IsDealerWinner(m_player);
+    }
+
+    @Test
+    void GetDealerScore_Will_Return_2(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        when(m_dealer.CalcScore()).thenReturn(2);
+
+        assertEquals(2, a_game.GetDealerScore());
     }
 }
