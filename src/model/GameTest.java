@@ -82,4 +82,14 @@ class GameTest {
 
         assertEquals(2, a_game.GetDealerScore());
     }
+
+    @Test
+    void GetPlayererScore_Will_Return_4(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        when(m_player.CalcScore()).thenReturn(4);
+
+        assertEquals(4, a_game.GetPlayerScore());
+    }
 }

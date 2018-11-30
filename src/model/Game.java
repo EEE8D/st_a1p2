@@ -39,10 +39,10 @@ public class Game {
     }
 
     public int GetDealerScore() {
-        return 0;
+        return m_dealer.CalcScore();
     }
 
     public int GetPlayerScore() {
-        return 0;
+        return m_player.CalcScore();
     }
 }
