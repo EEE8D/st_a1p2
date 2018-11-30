@@ -11,7 +11,6 @@ public class Program {
         Dealer a_dealer = new Dealer(a_deck);
         Player a_player = new Player();
         Game a_game = new Game(a_dealer, a_player);
-//        a_game.GameInit(a_dealer, a_player);
 
 
     }

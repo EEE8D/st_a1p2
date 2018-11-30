@@ -16,17 +16,6 @@ public class Game {
         }
     }
 
-//    public boolean GameInit(Dealer dealer, Player player){
-//        try{
-//            m_dealer = dealer;
-//            m_player = player;
-//            return true;
-//        } catch (Exception e){
-//            System.out.println("" + e);
-//            return false;
-//        }
-//    }
-
     public boolean NewGame(){
         return m_dealer.NewGame(m_player);
     }
