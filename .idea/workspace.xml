@@ -13,7 +13,7 @@
     <SUITE FILE_PATH="coverage/assignment1part2$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1543581872770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>model.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/assignment1part2$DealerTest.ic" NAME="DealerTest Coverage Results" MODIFIED="1543581904701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/assignment1part2$DealerTest.ic" NAME="DealerTest Coverage Results" MODIFIED="1543582153501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>model.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/assignment1part2$CardTest.ic" NAME="CardTest Coverage Results" MODIFIED="1543581885898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -27,7 +27,7 @@
     <option name="myElementSize" value="203" />
   </component>
   <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/coverage/1_v" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/coverage/dealerTest_1" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1208853391">
@@ -326,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DealerTest.IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_ShouldReturnFalse">
+  <component name="RunManager" selected="JUnit.DealerTest">
     <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="st_a1p2" />
       <extension name="coverage">
@@ -410,9 +410,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DealerTest" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_ShouldReturnFalse" />
         <item itemvalue="JUnit.DealerTest.IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_10S_2H_ShouldReturnFalse" />
-        <item itemvalue="JUnit.DealerTest" />
         <item itemvalue="JUnit.CardTest" />
         <item itemvalue="JUnit.PlayerTest" />
       </list>
