@@ -19,7 +19,13 @@ public class PlayGame {
 
         a_view.collectEvents();
 
-
+        if (a_view.wantsToStartNewGame()) {
+            a_game.NewGame();
+        } else if (a_view.wantsToHit()) {
+            a_game.Hit();
+        } else if (a_view.wantsToStand()) {
+            a_game.Stand();
+        }
 
         return true;
     }
