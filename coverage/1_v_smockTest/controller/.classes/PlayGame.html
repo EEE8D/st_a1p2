@@ -1,0 +1,115 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: PlayGame</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">controller</a> ]
+</div>
+
+<h1>Coverage Summary for Class: PlayGame (controller)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">PlayGame</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (14/ 14)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;package controller;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import model.Game;
+<i>4</i>&nbsp;import view.SimpleView;
+<i>5</i>&nbsp;
+<i>6</i>&nbsp;import javax.swing.text.View;
+<i>7</i>&nbsp;
+<b class="fc"><i>8</i>&nbsp;public class PlayGame {</b>
+<i>9</i>&nbsp;
+<i>10</i>&nbsp;    public boolean Play(SimpleView a_view, Game a_game){
+<b class="fc"><i>11</i>&nbsp;        a_view.DisplayWelcomeMessage();</b>
+<i>12</i>&nbsp;
+<b class="fc"><i>13</i>&nbsp;        a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());</b>
+<b class="fc"><i>14</i>&nbsp;        a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());</b>
+<i>15</i>&nbsp;
+<b class="fc"><i>16</i>&nbsp;        if (a_game.IsGameOver()) {</b>
+<b class="fc"><i>17</i>&nbsp;            a_view.DisplayWinner(a_game.IsDealerWinner());</b>
+<i>18</i>&nbsp;        }
+<i>19</i>&nbsp;
+<b class="fc"><i>20</i>&nbsp;        a_view.collectEvents();</b>
+<i>21</i>&nbsp;
+<b class="fc"><i>22</i>&nbsp;        if (a_view.wantsToStartNewGame()) {</b>
+<b class="fc"><i>23</i>&nbsp;            a_game.NewGame();</b>
+<b class="fc"><i>24</i>&nbsp;        } else if (a_view.wantsToHit()) {</b>
+<b class="fc"><i>25</i>&nbsp;            a_game.Hit();</b>
+<b class="fc"><i>26</i>&nbsp;        } else if (a_view.wantsToStand()) {</b>
+<b class="fc"><i>27</i>&nbsp;            a_game.Stand();</b>
+<i>28</i>&nbsp;        }
+<i>29</i>&nbsp;
+<b class="fc"><i>30</i>&nbsp;        return a_view.wantsToQuit();</b>
+<i>31</i>&nbsp;    }
+<i>32</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-11-30 13:39</div>
+</div>
+</body>
+</html>
