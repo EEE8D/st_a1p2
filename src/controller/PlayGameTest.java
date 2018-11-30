@@ -27,7 +27,9 @@ class PlayGameTest {
     @Test
     void Play_Should_Print_WelcomeMessage() {
         PlayGame projectManager = new PlayGame();
+
         projectManager.Play(a_view, a_game);
+
         verify(a_view).DisplayWelcomeMessage();
     }
 
@@ -61,5 +63,14 @@ class PlayGameTest {
         projectManager.Play(a_view, a_game);
 
         verify(a_view,never()).DisplayWinner(a_game.IsDealerWinner());
+    }
+
+    @Test
+    void Play_Should_collectEvent(){
+        PlayGame projectManager = new PlayGame();
+
+        projectManager.Play(a_view, a_game);
+
+        verify(a_view).collectEvents();
     }
 }
