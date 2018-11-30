@@ -23,15 +23,15 @@ public class Game {
     }
 
     public boolean Hit(){
-        return false;
+        return m_dealer.Hit(m_player);
     }
 
     public boolean Stand(){
-        return false;
+        return m_dealer.Stand();
     }
 
     public boolean IsGameOver(){
-        return false;
+        return m_dealer.IsGameOver();
     }
 
     public boolean IsDealerWinner(){
