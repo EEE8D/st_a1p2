@@ -74,6 +74,23 @@ class DealerTest {
     }
 
     @Test
+    void IsDealerWinner_Dealer_10H_10S_9H_Player_AS_10H_ShouldReturnFalse() {
+        Deck a_deck = new Deck();
+        Dealer a_dealer = new Dealer(a_deck);
+        Player a_player = new Player();
+
+        a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
+        a_dealer.DealCard(new Card(Card.Value.Ten, Card.Color.Spades));
+        a_dealer.DealCard(new Card(Card.Value.Nine, Card.Color.Hearts));
+        a_dealer.ShowHand();
+        a_player.DealCard(new Card(Card.Value.Ace, Card.Color.Spades));
+        a_player.DealCard(new Card(Card.Value.Ten, Card.Color.Hearts));
+        a_player.ShowHand();
+
+        assertFalse(a_dealer.IsDealerWinner(a_player));
+    }
+
+    @Test
     void DealNextCard_ShouldPass() {
 //        Dealer a_dealer = mock(Dealer.class);
 //        when(a_dealer.dealNextCard())
