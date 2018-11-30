@@ -18,6 +18,25 @@ public class Game {
         }
     }
 
+    public boolean NewGame(){
+        return false;
+    }
+
+    public boolean Hit(){
+        return false;
+    }
+
+    public boolean Stand(){
+        return false;
+    }
+
+    public boolean IsGameOver(){
+        return false;
+    }
+
+    public boolean IsDealerWinner(){
+        return false;
+    }
 
 
 }
