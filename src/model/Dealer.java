@@ -8,7 +8,7 @@ public class Dealer extends Player {
         this.m_deck = deck;
     }
 
-    boolean NewGame(Player a_player) {
+    public boolean NewGame(Player a_player) {
         m_deck = new Deck();
         m_deck.Shuffle();
 

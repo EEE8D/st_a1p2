@@ -19,7 +19,7 @@ public class PlayGame {
 
         a_view.collectEvents();
 
-        
+
 
         return true;
     }

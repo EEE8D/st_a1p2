@@ -62,15 +62,76 @@ class PlayGameTest {
 
         projectManager.Play(a_view, a_game);
 
-        verify(a_view,never()).DisplayWinner(a_game.IsDealerWinner());
+        verify(a_view, never()).DisplayWinner(a_game.IsDealerWinner());
     }
 
     @Test
-    void Play_Should_collectEvent(){
+    void Play_Should_collectEvent() {
         PlayGame projectManager = new PlayGame();
 
         projectManager.Play(a_view, a_game);
 
         verify(a_view).collectEvents();
     }
+
+    @Test
+    void StartNewGame_Branch_True_Should_Call_Dealer_To_Start_NewGame() {
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToStartNewGame()).thenReturn(true);
+
+        projectManager.Play(a_view, a_game);
+
+        verify(a_game).NewGame();
+    }
+
+    @Test
+    void StartNewGame_Branch_False_Should_Call_Dealer_To_Start_NewGame() {
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToStartNewGame()).thenReturn(false);
+
+        projectManager.Play(a_view, a_game);
+
+        verify(a_game, never()).NewGame();
+    }
+
+    @Test
+    void Stand_Branch_True_Should_Call_Dealer_Stand() {
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToStand()).thenReturn(true);
+
+        projectManager.Play(a_view, a_game);
+
+        verify(a_game).Stand();
+    }
+
+    @Test
+    void Stand_Branch_False_Should_Call_Dealer_Stand() {
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToStand()).thenReturn(false);
+
+        projectManager.Play(a_view, a_game);
+
+        verify(a_game, never()).Stand();
+    }
+
+    @Test
+    void Hit_Branch_True_Should_Call_Dealer_Hit() {
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToHit()).thenReturn(true);
+
+        projectManager.Play(a_view, a_game);
+
+        verify(a_game).Hit();
+    }
+
+    @Test
+    void Hit_Branch_False_Should_Call_Dealer_Hit() {
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToHit()).thenReturn(false);
+
+        projectManager.Play(a_view, a_game);
+
+        verify(a_game, never()).Hit();
+    }
+
 }
