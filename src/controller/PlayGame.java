@@ -17,7 +17,9 @@ public class PlayGame {
             a_view.DisplayWinner(a_game.IsDealerWinner());
         }
 
+        a_view.collectEvents();
 
+        
 
         return true;
     }
