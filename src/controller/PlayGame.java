@@ -9,6 +9,10 @@ public class PlayGame {
 
     boolean Play(SimpleView a_view, Game a_game){
         a_view.DisplayWelcomeMessage();
+
+        a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
+        a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
+
         return true;
     }
 }
