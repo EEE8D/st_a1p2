@@ -35,7 +35,7 @@ public class Game {
     }
 
     public boolean IsDealerWinner(){
-        return false;
+        return m_dealer.IsDealerWinner(m_player);
     }
 
 

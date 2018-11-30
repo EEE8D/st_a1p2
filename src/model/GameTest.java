@@ -63,4 +63,12 @@ class GameTest {
         verify(m_dealer).IsGameOver();
     }
 
+    @Test
+    void NewGame_WillCall_Dealer_IsDealerWinner(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        a_game.IsDealerWinner();
+        verify(m_dealer).IsDealerWinner(m_player);
+    }
 }
