@@ -19,6 +19,7 @@ class DeckTest {
     void GetCard_getFirst_ShouldBeTwoOfHearts(){
         Deck a_deck = new Deck();
         Card a_card = a_deck.GetCard();
+
         assertEquals(Card.Value.Two, a_card.GetValue());
         assertEquals(Card.Color.Hearts, a_card.GetColor());
     }
