@@ -19,7 +19,7 @@ public class Game {
     }
 
     public boolean NewGame(){
-        return false;
+        return m_dealer.NewGame(m_player);
     }
 
     public boolean Hit(){

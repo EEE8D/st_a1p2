@@ -32,6 +32,7 @@ class GameTest {
         Game a_game = new Game();
         assertTrue(a_game.GameInit(m_dealer, m_player));
 
+        a_game.NewGame();
         verify(m_dealer).NewGame(m_player);
     }
 
