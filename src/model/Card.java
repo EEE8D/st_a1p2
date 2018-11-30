@@ -2,7 +2,7 @@ package model;
 
 import java.util.TreeMap;
 
-class Card {
+public class Card {
 
     public enum Value {
         Two,
@@ -41,14 +41,14 @@ class Card {
         m_isHidden = true;
     }
 
-    Color GetColor() {
+    public Color GetColor() {
         if (m_isHidden) {
             return Color.Hidden;
         }
         return m_color;
     }
 
-    Value GetValue() {
+    public Value GetValue() {
         if (m_isHidden) {
             return Value.Hidden;
         }
