@@ -37,7 +37,6 @@ class PlayGameTest {
 
         projectManager.Play(a_view, a_game);
 
-        verify(a_view).DisplayWelcomeMessage();
         verify(a_view).DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
         verify(a_view).DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
     }
