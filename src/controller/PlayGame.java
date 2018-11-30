@@ -27,6 +27,6 @@ public class PlayGame {
             a_game.Stand();
         }
 
-        return true;
+        return a_view.wantsToQuit();
     }
 }
