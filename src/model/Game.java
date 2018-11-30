@@ -1,38 +1,32 @@
 package model;
 
-import java.security.PublicKey;
-
 public class Game {
 
     Dealer m_dealer;
     Player m_player;
 
     public Game(Dealer dealer, Player player) {
-        try{
-            m_dealer = dealer;
-            m_player = player;
-        } catch (Exception e){
-            System.out.println("" + e);
-        }
+        m_dealer = dealer;
+        m_player = player;
     }
 
-    public boolean NewGame(){
+    public boolean NewGame() {
         return m_dealer.NewGame(m_player);
     }
 
-    public boolean Hit(){
+    public boolean Hit() {
         return m_dealer.Hit(m_player);
     }
 
-    public boolean Stand(){
+    public boolean Stand() {
         return m_dealer.Stand();
     }
 
-    public boolean IsGameOver(){
+    public boolean IsGameOver() {
         return m_dealer.IsGameOver();
     }
 
-    public boolean IsDealerWinner(){
+    public boolean IsDealerWinner() {
         return m_dealer.IsDealerWinner(m_player);
     }
 
