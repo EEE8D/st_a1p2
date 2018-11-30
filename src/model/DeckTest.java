@@ -35,5 +35,9 @@ class DeckTest {
         assertEquals(a_card, a_deck.GetCard());
     }
 
-//    @Test
+    @Test
+    void Shuffle_ShouldPass(){
+        Deck a_deck = new Deck();
+        a_deck.Shuffle();
+    }
 }
