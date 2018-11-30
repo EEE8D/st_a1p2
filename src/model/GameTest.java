@@ -92,4 +92,24 @@ class GameTest {
 
         assertEquals(4, a_game.GetPlayerScore());
     }
+
+    @Test
+    void GetDealerHand_Will_Call_Dealer_GetHand(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        a_game.GetDealerHand();
+
+        verify(m_dealer).GetHand();
+    }
+
+    @Test
+    void GetPlayerHand_Will_Call_Player_GetHand(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        a_game.GetPlayerHand();
+
+        verify(m_player).GetHand();
+    }
 }

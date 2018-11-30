@@ -45,4 +45,12 @@ public class Game {
     public int GetPlayerScore() {
         return m_player.CalcScore();
     }
+
+    public Iterable<Card> GetDealerHand() {
+        return m_dealer.GetHand();
+    }
+
+    public Iterable<Card> GetPlayerHand() {
+        return m_player.GetHand();
+    }
 }
