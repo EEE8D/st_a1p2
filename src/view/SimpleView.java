@@ -48,7 +48,7 @@ public class SimpleView {
         }
     }
 
-    private void DisplayCard(model.Card a_card) {
+    public void DisplayCard(model.Card a_card) {
         System.out.println("\t" + a_card.GetValue() + " of " + a_card.GetColor());
     }
 
@@ -60,10 +60,12 @@ public class SimpleView {
         DisplayHand("Player", a_hand, a_score);
     }
 
-    private void DisplayHand(String a_name, Iterable<model.Card> a_hand, int a_score) {
+    public void DisplayHand(String a_name, Iterable<model.Card> a_hand, int a_score) {
         System.out.println(a_name + " Has: ");
-        for (model.Card c : a_hand) {
-            DisplayCard(c);
+        if (a_hand != null){
+            for (model.Card c : a_hand) {
+                DisplayCard(c);
+            }
         }
         System.out.println("Score: " + a_score);
         System.out.println("");
