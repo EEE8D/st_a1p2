@@ -25,9 +25,7 @@ class PlayGameTest {
     @Test
     void Play_Should_Print_WelcomeMessage(){
         PlayGame projectManager = new PlayGame();
-
         projectManager.Play(a_view, a_game);
-
         verify(a_view).DisplayWelcomeMessage();
     }
 
