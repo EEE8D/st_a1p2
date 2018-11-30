@@ -22,16 +22,16 @@ class GameTest {
 
     @Test
     void GameInit_ShouldReturnTrue() {
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
         assertEquals(m_dealer, a_game.m_dealer);
         assertEquals(m_player, a_game.m_player);
     }
 
     @Test
     void NewGame_WillCall_Dealer_NewGame(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.NewGame();
         verify(m_dealer).NewGame(m_player);
@@ -39,8 +39,8 @@ class GameTest {
 
     @Test
     void Hit_WillCall_Dealer_Hit(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.Hit();
         verify(m_dealer).Hit(m_player);
@@ -48,8 +48,8 @@ class GameTest {
 
     @Test
     void Stand_WillCall_Dealer_Stand(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.Stand();
         verify(m_dealer).Stand();
@@ -57,8 +57,8 @@ class GameTest {
 
     @Test
     void IsGameOver_WillCall_Dealer_IsGameOver(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.IsGameOver();
         verify(m_dealer).IsGameOver();
@@ -66,8 +66,8 @@ class GameTest {
 
     @Test
     void IsDealerWinner_WillCall_Dealer_IsDealerWinner(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.IsDealerWinner();
         verify(m_dealer).IsDealerWinner(m_player);
@@ -75,8 +75,8 @@ class GameTest {
 
     @Test
     void GetDealerScore_Will_Return_2(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         when(m_dealer.CalcScore()).thenReturn(2);
 
@@ -85,8 +85,8 @@ class GameTest {
 
     @Test
     void GetPlayererScore_Will_Return_4(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         when(m_player.CalcScore()).thenReturn(4);
 
@@ -95,8 +95,8 @@ class GameTest {
 
     @Test
     void GetDealerHand_Will_Call_Dealer_GetHand(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.GetDealerHand();
 
@@ -105,8 +105,8 @@ class GameTest {
 
     @Test
     void GetPlayerHand_Will_Call_Player_GetHand(){
-        Game a_game = new Game();
-        assertTrue(a_game.GameInit(m_dealer, m_player));
+        Game a_game = new Game(m_dealer, m_player);
+//        assertTrue(a_game.GameInit(m_dealer, m_player));
 
         a_game.GetPlayerHand();
 

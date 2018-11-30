@@ -4,19 +4,28 @@ import java.security.PublicKey;
 
 public class Game {
 
-    protected Dealer m_dealer;
-    protected Player m_player;
+    Dealer m_dealer;
+    Player m_player;
 
-    public boolean GameInit(Dealer dealer, Player player){
+    public Game(Dealer dealer, Player player) {
         try{
             m_dealer = dealer;
             m_player = player;
-            return true;
         } catch (Exception e){
             System.out.println("" + e);
-            return false;
         }
     }
+
+//    public boolean GameInit(Dealer dealer, Player player){
+//        try{
+//            m_dealer = dealer;
+//            m_player = player;
+//            return true;
+//        } catch (Exception e){
+//            System.out.println("" + e);
+//            return false;
+//        }
+//    }
 
     public boolean NewGame(){
         return m_dealer.NewGame(m_player);

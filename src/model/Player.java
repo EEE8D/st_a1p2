@@ -8,7 +8,7 @@ public class Player {
     private List<Card> m_hand;
     protected final int g_maxScore = 21;
 
-    Player() {
+    public Player() {
         m_hand = new LinkedList<Card>();
     }
 

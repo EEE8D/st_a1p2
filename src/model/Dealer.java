@@ -4,11 +4,11 @@ public class Dealer extends Player {
 
     Deck m_deck;
 
-    Dealer(Deck deck) {
+    public Dealer(Deck deck) {
         this.m_deck = deck;
     }
 
-    public boolean NewGame(Player a_player) {
+    boolean NewGame(Player a_player) {
         m_deck = new Deck();
         m_deck.Shuffle();
 
@@ -57,19 +57,4 @@ public class Dealer extends Player {
         c.Show(isCardNotHidden);
         a_player.DealCard(c);
     }
-
-//    boolean PracticeMethod(){
-//        if (will_return_zero() == 0){
-//            return will_return_true();
-//        }
-//        return false;
-//    }
-//
-//    boolean will_return_true(){
-//        return true;
-//    }
-//
-//    int will_return_zero(){
-//        return 0;
-//    }
 }
