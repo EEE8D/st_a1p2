@@ -36,4 +36,31 @@ class GameTest {
         verify(m_dealer).NewGame(m_player);
     }
 
+    @Test
+    void NewGame_WillCall_Dealer_Hit(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        a_game.Hit();
+        verify(m_dealer).Hit(m_player);
+    }
+
+    @Test
+    void NewGame_WillCall_Dealer_Stand(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        a_game.Stand();
+        verify(m_dealer).Stand();
+    }
+
+    @Test
+    void NewGame_WillCall_Dealer_IsGameOver(){
+        Game a_game = new Game();
+        assertTrue(a_game.GameInit(m_dealer, m_player));
+
+        a_game.IsGameOver();
+        verify(m_dealer).IsGameOver();
+    }
+
 }
