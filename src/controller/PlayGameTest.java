@@ -9,6 +9,8 @@ import view.SimpleView;
 
 import static org.mockito.Mockito.*;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 class PlayGameTest {
 
     SimpleView a_view;
@@ -132,6 +134,22 @@ class PlayGameTest {
         projectManager.Play(a_view, a_game);
 
         verify(a_game, never()).Hit();
+    }
+
+    @Test
+    void When_wantsToQuit_true_Play_return_true(){
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToQuit()).thenReturn(true);
+
+        assertTrue(projectManager.Play(a_view, a_game));
+    }
+
+    @Test
+    void When_wantsToQuit_false_Play_return_true(){
+        PlayGame projectManager = new PlayGame();
+        when(a_view.wantsToQuit()).thenReturn(false);
+
+        assertFalse(projectManager.Play(a_view, a_game));
     }
 
 }
